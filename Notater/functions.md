@@ -1,0 +1,1 @@
+You define a functions with the "def" notation. For example def greet(): Be careful with indents here aswell. 
