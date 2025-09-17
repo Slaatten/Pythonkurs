@@ -1,0 +1,1 @@
+Lists: Is made by []. A matrix is a list inside a list. You can combine 2 lists easly with +. We have a list function list(). For example list(range(20)), this gives the numbers from 0-19.
