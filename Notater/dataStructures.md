@@ -12,3 +12,4 @@ Lambda functions: (key=lambda parameters:expression). We use lambda function whe
 The map function is where we want to apply a function to each element in a list, for example to double it. For example if we got a list of numbers we can result = map(lambda x: x * 2, numbers). It returns a map function so we need to convert it into a list. Then print if with print(list(result)). Alternative: [item[1] for item in items]
 
 The filter function is where we want to pick at the elements in a list based on a condition. It returns a filter object which needs to be converted to a list object. Same syntax only you switch "map" with "filter. Alternative: [item for item in items if item[1] >= 10]
+
