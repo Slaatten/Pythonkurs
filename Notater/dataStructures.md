@@ -13,3 +13,21 @@ The map function is where we want to apply a function to each element in a list,
 
 The filter function is where we want to pick at the elements in a list based on a condition. It returns a filter object which needs to be converted to a list object. Same syntax only you switch "map" with "filter. Alternative: [item for item in items if item[1] >= 10]
 
+The Zip function takes in one or more iterable. Can cast it with list().
+
+0, "", [] is considired Falsy values. Stacks = LIFO. Typically undo-functions. 
+
+from collections import deque. Queues = FIFO. queue = deque([]). Messagesystems. 
+
+Tuples = ReadOnlyLists. Can not be changed. Cordinates. syntax (). tuple() is a function
+
+from array import array. numbers = array("i", [1, 2, 3]). Just use if you deal with a large number og numbers. 
+
+numbers = [1, 1, 2, 3]. uniqes = set(numbers). The set functions removes duplicates. A union of sets syntax is used by the pipe |. This includes the uniques from both sets. the syntax & prints the values that is in both. The syntax - shows what is in the first set and not the second. The syntax ^ shows the values that is in the sets but not both. Sets does not supports indexing. Unordered sets of uniqe collections. set() is a function. syntax s = {1,2,3,4}
+
+Dictionaries is collections of keyvalue pairs. for example a name to contact information, brukernavn + passord. The key is often a String or an integer. The value can be anything. dict() is a function. Does not support indexing. point = dict("x" = 1, "y" = 2). You can use the .get method to check if a key exists. You can use the .items method to iterate over a dictionary and make it a tuple. 
+Comprehensions: we can use this on lists, sets and dictionaries. syntax d = {"user_name": "Stian", "age": 13}. Both dictionaries and sets are unordered collections and cant be sorted. You must convert to a tuple, then convert to a list to do so. 
+You can use the unpack operator * before a value/argument. 
+
+
+

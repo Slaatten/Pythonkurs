@@ -74,3 +74,109 @@ print(evens)              # [2, 4, 6]
 numbers = [1, 2, 3, 4, 5, 6]
 squares = [x * x for x in numbers if x % 2 == 0]
 print(squares)            # [4, 16, 36]
+
+# Exercise 13: Zip & Falsy
+Zip
+names = ["Stian", "Ola", "Kari"]
+ages = [22, 30, 25]
+
+combined = list(zip(names, ages))
+print(combined)
+
+Falsy
+x = ""
+if not x:
+    print("Falsy")
+
+# Exercice 14: Stack LIFO
+stack = []
+stack.append(1)
+stack.append(2)
+stack.append(3)
+
+stack.pop()
+print(stack)
+stack.pop()
+print(stack)
+
+if not stack:
+    print("Empty stack")
+
+# Exercise 15: Queues FIFO
+from collections import deque
+queue = deque([])
+
+queue.append(1)
+queue.append(2)
+queue.append(3)
+queue.popleft()
+print(queue)
+
+# Exercise 16: Tuples
+point = (10, 20)
+print(point[0])
+point[0] = 50 # Gives Error
+
+# Exercise 17: Sets
+a = {1, 2, 3}
+b = {3, 4, 5}
+
+print(a | b)
+print(a & b)
+print(a - b)
+print(a ^ b)
+
+duplicates = [1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 6, 6]
+uniqes = list(set(duplicates))
+print(uniqes)
+
+# Exercise 18: Dictionaries
+user = {"name": "Stian", "age": 25}
+print(user)
+user["city"] = "Oslo"
+print(user)
+
+print(user.get("password", "N/A"))
+
+for key, value in user.items():
+    print(key, value)
+
+# Exercise 19: Comprehensions
+numbers = list(range(10))
+print(numbers)
+sqaure = [x ** 2 for x in numbers]
+print(sqaure)
+
+streng = "Programming"
+uniqes = {c for c in streng}
+print(uniqes)
+
+sqaures_dict = {x: x ** 2 for x in range(1, 6)}
+print(sqaures_dict)
+
+# Exercise 20: Unpacking
+def add(a, b, c):
+    return a + b + c
+
+
+values = [1, 2, 3]
+
+print(add(*values))
+
+# Exercise Mosh
+from pprint import pprint
+sentence = "This is a common interview question"
+
+char_frequency = {}
+
+for char in sentence:
+    if char in char_frequency:
+        char_frequency[char] += 1
+    else:
+        char_frequency[char] = 1
+
+char_frequency_sorted = sorted(char_frequency.items(),
+                               key=lambda kv: kv[1],
+                               reverse=True)
+print(char_frequency_sorted[0])
+
